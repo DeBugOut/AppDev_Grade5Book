@@ -2,7 +2,7 @@
 :root {
   --container-width: 1430px;
   --base-font-size: calc(
-    var(--container-width) * 0.0253
+    var(--container-width) * 0.026
   ); /* 36px at full width */
 }
 
