@@ -1,11 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 21 Test</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <title>Grade 5 Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Moul&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Fonts */
+      .moul-regular {
+        font-family: "Moul", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .hanuman-thin {
+        font-family: "Hanuman", serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      .hanuman-light {
+        font-family: "Hanuman", serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      .hanuman-regular {
+        font-family: "Hanuman", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .hanuman-bold {
+        font-family: "Hanuman", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .hanuman-black {
+        font-family: "Hanuman", serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+
+      /* Base Styles */
+      body {
+        font-family: "Hanuman", serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #fff;
+      }
+
+      .container {
+        width: 1430px;
+        height: 2070px;
+        margin: 50px auto;
+        padding: 80px;
+        border: 1px solid #000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid black;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+        width: 100%;
+      }
+
+      .header img {
+        width: 150px;
+      }
+
+      .header h1 {
+        font-size: 81px;
+        margin: 0;
+        flex-grow: 1;
+        text-align: center;
+      }
+
+      .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 100%;
+        margin-bottom: 0px;
+      }
+
+      .images .image-container {
+        text-align: center;
+      }
+
+      .images img {
+        width: 100%;
+        height: auto;
+        border: 1px solid black;
+      }
+
+      .text {
+        text-align: left;
+        font-size: 40px;
+        line-height: 2.2;
+        margin-top: 0px;
+        width: 100%;
+      }
+
+      .page-number {
+        text-align: right;
+        font-size: 35px;
+        margin-top: -25px;
+        width: 100%;
+      }
+
+      /* Navigation Arrows */
+      .navigation {
+        position: fixed;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        margin-top: 0px;
+      }
+
+      .navigation a {
+        text-decoration: none;
+        font-size: 50px;
+        color: black;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px 20px;
+        border-radius: 50%;
+        transition: background 0.3s;
+      }
+
+      .navigation a:hover {
+        background: rgba(200, 200, 200, 0.8);
+      }
+
+      /* Media Queries for Responsiveness */
+      @media (max-width: 1430px) {
+        .container {
+          width: 100%;
+          height: auto;
+        }
+        .header h1 {
+          font-size: 6vw;
+        }
+        .text {
+          font-size: 1.5rem;
+        }
+        .page-number {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>សំណួរ</h1>
+      <ol class="questions">
+        <li>តើអ្វីជាភាពសំខាន់នៃការសិក្សា?</li>
+        <li>បើយើងជានិស្សិតតើយើងគួរធ្វើអ្វីដើម្បីកែលម្អខ្លួន?</li>
+        <li>តើការអានសៀវភៅមានសារៈសំខាន់ប៉ុន្មាន?</li>
+        <li>...</li>
+      </ol>
+      <h2>សំណាក់ទន់</h2>
+      <ol class="options">
+        <li>
+          <p>តើការបំពេញសំណុំបែបបទនេះត្រូវធ្វើដូចម្តេច?</p>
+          <ul>
+            <li><input type="checkbox" /> ជ្រើសរើសការគោរព</li>
+            <li><input type="checkbox" /> ...</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </body>
 </html>
