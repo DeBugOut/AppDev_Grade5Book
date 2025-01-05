@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/styles/utilities.css" />
     <style>
       .header {
-        border: 0px;
+        border: 0px !important;
         margin-bottom: -35px;
         text-align: right !important;
         justify-content: flex-end !important;
@@ -25,7 +25,15 @@
       .header p {
         text-align: right !important;
         margin: 0;
-        font-size: calc(var(--base-font-size) * .63);
+        font-size: calc(var(--base-font-size) * 0.63);
+      }
+
+      .header img {
+        width: calc(var(--container-width) * 0.07);
+      }
+
+      .text p {
+        margin-top: -25px;
       }
     </style>
   </head>
@@ -36,24 +44,24 @@
           <p>មេរៀនទី១</p>
         </div>
         <div class="text">
-          <p>
+          <p class="mt-3">
             &emsp;&emsp;&emsp;<strong>ខ. តួអង្គសុខុម៖</strong>
             ជាមនុស្សមានចរិតភ្លើតភ្លើន
             ឆាប់ឈ្លក់វង្វេងនឹងទ្រព្យសម្បត្តិចូលចិត្តសប្បាយហ៊ឺហា
-            ភ្លេចមិត្តភក្តិដែលធ្លាប់កម្សត់កម្រនឹងគ្នា តែជាមនុស្សអាចអប់រំណែនាំបាន
-            ។សាវន់ដើរទៅចាប់ដៃសុខុម
+            ភ្លេចមិត្តភក្តិដែលធ្លាប់កម្សត់កម្រនឹងគ្នា
+            តែជាមនុស្សអាចអប់រំណែនាំបាន។
           </p>
-          <p class="box">
+          <p class="box mt-2">
             &emsp;&emsp;&emsp;ការប្រៀបធៀបតួអង្គ គឺជាការបង្ហាញលក្ខណៈ ល្អ អាក្រក់
             កាច ស្ងួតដោយផ្តោតទៅលើរូបសម្បត្តិ ចរិតលក្ខណៈ សកម្មភាព របស់តួអង្គ ។
           </p>
           <h2>លំហាត់</h2>
-          <p>
+          <p class="mt-3">
             &emsp;&emsp;&emsp;ចូរអានរឿង ``ក្មេងកំព្រា``
             រួចធ្វើការប្រៀបធៀបតួអង្គនិននិងគំនិត។
           </p>
           <h2 style="text-align: center">រឿង ក្មេងកំព្រា​</h2>
-          <p>
+          <p class="mt-3">
             &emsp;&emsp;&emsp;មានបុរសពោះម៉ាយម្នាក់បកបរបរជ្រលក់អំបោះ។ បុរសនោះ
             រស់នៅជាមួយកូនប្រុសម្នាក់ និងក្មួយកំព្រាម្នាក់។
             កូនប្រុសរបស់គាត់ឈ្មោះនិន ឯក្មួយប្រុសឈ្មោះគំនិត។​​
