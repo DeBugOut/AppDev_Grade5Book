@@ -13,73 +13,98 @@
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/layout.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
+    <style>
+      .header {
+        border: 0px;
+        margin-bottom: -35px;
+        text-align: right !important;
+        justify-content: flex-end !important;
+      }
+
+      .header p {
+        text-align: right !important;
+        margin: 0;
+        font-size: calc(var(--base-font-size) * 0.63);
+      }
+
+      .text p {
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+
+      .text h1 {
+        font-size: calc(var(--base-font-size) * 1.15);
+      }
+
+      .lh-3 {
+        line-height: 2 !important;
+      }
+    </style>
   </head>
   <body>
-    <divpage class="container">
+    <div class="container">
       <div class="content">
         <div class="header">
-          <p class="right">មេរៀនទី២</p>
+          <p>មេរៀនទី២</p>
         </div>
-
         <div class="text">
-          <p class="hanuman-bold">សំណួរ</p>
-          <p class="hanuman-regular" style="line-height: 1">
-            &emsp;&emsp;១.&emsp;តើក្នុងរជ្ជកាលស្ដេចស្រីអង្គណា ដែលស្រីៗទៅដណ្តឹងប្រុសធ្វើប្ដី ?
+          <h1 class="hanuman-bold">សំណួរ</h1>
+          <p class="hanuman-regular">
+            &emsp;&emsp;១.&emsp;តើក្នុងរជ្ជកាលស្ដេចស្រីអង្គណា
+            ដែលស្រីៗទៅដណ្តឹងប្រុសធ្វើប្ដី ?
           </p>
-          <p class="hanuman-regular" style="line-height: 1">
+          <p class="hanuman-regular">
             &emsp;&emsp;២.&emsp;ហេតុអ្វីបានជាស្រីៗមានគំនិតរើបម្រះ ?
           </p>
-          <p class="hanuman-regular" style="line-height: 1">
+          <p class="hanuman-regular">
             &emsp;&emsp;៣.&emsp;តើស្រីៗរើបម្រះតាមវិធីណា ?
           </p>
-          <p class="hanuman-regular" style="line-height: 1">
+          <p class="hanuman-regular">
             &emsp;&emsp;៤.&emsp; ហេតុអ្វីបានជាពួកស្រីៗភ្នាល់ឈ្នះប្រុសៗ ?
           </p>
-          <p class="hanuman-regular" style="line-height: 1">
-            &emsp;&emsp;៥.&emsp; តើដំណើររឿងភ្នាល់គ្នាពូនភ្នំកើតឡើងនៅកន្លែងណា ? នៅពេលណា ?
+          <p class="hanuman-regular">
+            &emsp;&emsp;៥.&emsp; តើដំណើររឿងភ្នាល់គ្នាពូនភ្នំកើតឡើងនៅកន្លែងណា ?
+            នៅពេលណា ?
           </p>
-          <p class="hanuman-regular" style="line-height: 1">
+          <p class="hanuman-regular">
             &emsp;&emsp;៦.&emsp; តើរឿងនេះមានព្រឹត្តិការណ៍អ្វីខ្លះ ?
           </p>
-          <p class="hanuman-regular" style="line-height: 1">
-            &emsp;&emsp;៧.&emsp; តើស្រីៗឈ្នះ៖ប្រុសៗ ដោយវិធីណា ? ចូរលើកយកអំណះអំណាងនៅក្នុងរឿងមកបញ្ជាក់។
+          <p class="hanuman-regular">
+            &emsp;&emsp;៧.&emsp; តើស្រីៗឈ្នះ៖ប្រុសៗ ដោយវិធីណា ?
+            ចូរលើកយកអំណះអំណាងនៅក្នុងរឿងមកបញ្ជាក់។
           </p>
+          <h1 class="hanuman-bold">លំហាត់ ✓</h1>
+          <p class="hanuman-regular lh-3">
+            &emsp;&emsp;ក.&emsp; តើរឿងខាងលើមានគំនិតអប់រំដូចម្តេច? ចូរគូសសញ្ញា ✓
+            នៅក្នុងប្រអប់ចម្លើយត្រឹមត្រូវមួយ។
+          </p>
+          <div>
+            &emsp;&emsp;<input type="checkbox" /> ១.
+            ត្រូវចេះគោរពសិទ្ធិគ្នាទៅវិញទៅមក។ <br />
+            &emsp;&emsp;<input type="checkbox" /> ២. ត្រូវចេះប្រើប្រាជ្ញារួមផ្សំ
+            ទើបទទួលបានជោគជ័យ។ <br />
+            &emsp;&emsp;<input type="checkbox" /> ៣. ត្រូវរកគេមកជួយ
+            ទើបទទួលបានជោគជ័យ។ <br />
+          </div>
+          <p class="hanuman-regular lh-3">
+            &emsp;&emsp;ខ.&emsp;ចូរបង្ហាញអារម្មណ៍របស់ពួកប្រុសៗ
+            នៅពេលចាញ់កលល្បិចពួកស្រីៗ ដោយជ្រើសរើសចម្លើយត្រឹមត្រូវមួយ ។
+          </p>
+          <div>
+            &emsp;&emsp;<input type="checkbox" /> ១. ប្រុសៗសប្បាយចិត្ត
+            ព្រោះបានប្រកួតជាមួយស្រីៗ។​<br />
+            &emsp;&emsp;<input type="checkbox" /> ២. ប្រុសៗខ្វល់ខ្វាយ
+            ព្រោះចង់ឈ្នះស្រីៗ។<br />
+            &emsp;&emsp;<input type="checkbox" /> ៣. ប្រុសៗខកចិត្តនិងខ្មាសអៀន
+            ព្រោះចាញ់កលស្រីៗ។ <br />
+          </div>
         </div>
-        <div class="text">
-          <p class="hanuman-bold">លំហាត់✓</p>
-          <p class="hanuman-regular" style="line-height: 1">
-            <p class="hanuman-regular" style="line-height: 1">
-              &emsp;&emsp;ក.&emsp; តើរឿងខាងលើមានគំនិតអប់រំដូចម្តេច? ចូរគូសសញ្ញា √ នៅក្នុងប្រអប់ចម្លើយត្រឹមត្រូវមួយ។
-            </p>
-          <li><input type="checkbox"> ១. ត្រូវចេះគោរពសិទ្ធិគ្នាទៅវិញទៅមក ។</li>
-          <li><input type="checkbox"> ២. ត្រូវចេះប្រើប្រាជ្ញារួមផ្សំ ទើបទទួលបានជោគជ័យ ។</li>
-          <li><input type="checkbox"> ៣. ត្រូវរកគេមកជួយ ទើបទទួលបានជោគជ័យ ។ </li>
-
-        </div>
-        <div class="text">
-          <p class="hanuman-bold">លំហាត់✓</p>
-          <p class="hanuman-regular" style="line-height: 1">
-            <p class="hanuman-regular" style="line-height: 1">
-              &emsp;&emsp; ខ.&emsp;ចូរបង្ហាញអារម្មណ៍របស់ពួកប្រុសៗ នៅពេលចាញ់កលល្បិចពួកស្រីៗ ដោយជ្រើសរើសចម្លើយត្រឹមត្រូវមួយ ។
-            </p>
-
-            <li><input type="checkbox"> ១. ប្រុសៗសប្បាយចិត្ត ព្រោះបានប្រកួតជាមួយស្រីៗ ។</li>
-          <li><input type="checkbox"> ២.  ប្រុសៗខ្វល់ខ្វាយ ព្រោះចង់ឈ្នះស្រីៗ </li>
-          <li><input type="checkbox"> ៣.ប្រុសៗខកចិត្តនិងខ្មាសអៀន ព្រោះចាញ់កលស្រីៗ ។ </li>
-
-            
-
-
-
-          
         <div class="page-number">២១</div>
       </div>
     </div>
-    
-
     <div class="navigation">
-      <a href="page1.html" class="left">&#8592;</a>
-      <a href="page3.html" class="right">&#8594;</a>
+      <a href="page20.html" class="left">&#8592;</a>
+      <a href="page22.html" class="right">&#8594;</a>
     </div>
   </body>
 </html>
