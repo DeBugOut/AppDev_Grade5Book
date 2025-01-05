@@ -63,6 +63,9 @@
 .mt-3 {
     margin-top: 25px !important;
 }
+.mt-4 {
+    margin-top: 35px !important;
+}
 .mb-1 {
   margin-bottom: 4px !important;
 }
@@ -78,6 +81,12 @@
 .ml-3 {
   margin-left: 25px !important;
 }
+.ml-4 {
+    margin-left: 50px !important;
+}
+.ml-5 {
+    margin-left: 75px !important;
+}
 .mr-1 {
   margin-right: 4px !important;
 }
@@ -86,6 +95,12 @@
 }
 .mr-3 {
   margin-right: 25px !important;
+}
+.mr-4 {
+    margin-right: 50px !important;
+}
+.mr-5 {
+    margin-right: 75px !important;
 }
 .p-0 {
   padding: 0 !important;
