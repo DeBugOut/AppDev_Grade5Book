@@ -1,0 +1,62 @@
+/* Responsive Styles */
+@media (max-width: 1460px) {
+    :root {
+      --container-width: 95vw;
+    }
+  
+    .container {
+      margin: 20px auto;
+      padding: 40px;
+    }
+  
+    .navigation a.left {
+      left: 20px;
+    }
+  
+    .navigation a.right {
+      right: 20px;
+    }
+  
+    .page-number {
+      bottom: 20px;
+      left: auto;
+      right: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      margin: 10px auto;
+      padding: 20px;
+    }
+  
+    .content {
+      padding: 0px 40px 0px 17px;
+    }
+  
+    .text {
+      line-height: 2;
+    }
+  
+    .navigation a {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .content {
+      padding: 0px 20px 0px 10px;
+    }
+  
+    .text {
+      line-height: 1.8;
+    }
+  
+    .navigation a {
+      padding: 5px 10px;
+    }
+  }

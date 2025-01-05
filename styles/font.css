@@ -1,0 +1,36 @@
+/* Fonts */
+.moul-regular {
+    font-family: "Moul", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .hanuman-thin {
+    font-family: "Hanuman", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .hanuman-light {
+    font-family: "Hanuman", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .hanuman-regular {
+    font-family: "Hanuman", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .hanuman-bold {
+    font-family: "Hanuman", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .hanuman-black {
+    font-family: "Hanuman", serif;
+    font-weight: 900;
+    font-style: normal;
+  }

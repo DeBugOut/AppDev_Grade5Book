@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grade 5 Book</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -7,214 +10,22 @@
       href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Moul&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/styles/font.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <link rel="stylesheet" href="/styles/utilities.css" />
     <style>
-      /* Fonts */
-      .moul-regular {
-        font-family: "Moul", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .hanuman-thin {
-        font-family: "Hanuman", serif;
-        font-weight: 100;
-        font-style: normal;
-      }
-      .hanuman-light {
-        font-family: "Hanuman", serif;
-        font-weight: 300;
-        font-style: normal;
-      }
-      .hanuman-regular {
-        font-family: "Hanuman", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .hanuman-bold {
-        font-family: "Hanuman", serif;
-        font-weight: 700;
-        font-style: normal;
-      }
-      .hanuman-black {
-        font-family: "Hanuman", serif;
-        font-weight: 900;
-        font-style: normal;
-      }
-
-      /* Base Styles */
-      body {
-        font-family: "Hanuman", serif;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        background-color: #fff;
-      }
-
-      .content {
-        padding: 0px 35px 0px 80px; /* Adjust padding as needed */
-        height: 100%;
-        box-sizing: border-box; /* Ensures padding doesn't affect content height */
-      }
-
-      .container {
-        width: 1430px;
-        height: 2070px;
-        margin: 50px auto;
-        padding: 80px;
-        border: 1px solid #000;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
       .header {
-        display: flex;
-        justify-content: flex-end;
-        padding-bottom: 20px;
-        margin-bottom: 50px;
-        width: 100%;
-        align-items: center;
-        position: relative;
-      }
-
-      .header img {
-        width: 75px;
-        height: auto;
-      }
-
-      .header h1 {
-        font-size: 50px;
-        margin: 0;
-        flex-grow: 1;
-        text-align: left;
-        margin-left: 17px;
+        border: 0px;
+        margin-bottom: -35px;
+        text-align: right !important;
+        justify-content: flex-end !important;
       }
 
       .header p {
-        align-items: center;
-        font-size: 25px;
-        margin: 0;
-      }
-
-      .right {
         text-align: right !important;
-        float: none;
         margin: 0;
-      }
-
-      .left {
-        text-align: left !important;
-        float: none;
-        margin: 0;
-      }
-
-      .images {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        width: 100%;
-        margin-bottom: 0px;
-      }
-
-      .images .image-container {
-        text-align: center;
-      }
-
-      .images img {
-        width: 100%;
-        height: auto;
-        border: 1px solid black;
-      }
-
-      .text {
-        text-align: left;
-        font-size: 36px;
-        line-height: 2.1;
-        margin-top: 0px;
-        width: 100%;
-        word-wrap: normal;
-      }
-
-      .text h2 {
-        text-align: left;
-        font-size: 50px;
-      }
-
-      .text p {
-        margin-top: 0px;
-      }
-
-      .center {
-        text-align: center;
-      }
-
-      .box {
-        border: 5px solid #000;
-        border-radius: 65px;
-        padding: 25px;
-        padding-left: 50px;
-        margin: 10px;
-      }
-
-      .page-number {
-        position: absolute; /* Position relative to the container */
-        bottom: -980px; /* Distance from the bottom of the container */
-        right: 327px; /* Distance from the right of the container */
-        font-size: 35px;
-      }
-
-      /* Navigation Arrows */
-      .navigation {
-        position: fixed;
-        top: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
-        pointer-events: none;
-      }
-
-      .navigation a {
-        text-decoration: none;
-        font-size: 50px;
-        color: black;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 10px 20px;
-        border-radius: 50%;
-        transition: background 0.3s;
-        pointer-events: all;
-      }
-
-      .navigation a:hover {
-        color: orange;
-      }
-
-      .navigation a.left {
-        position: fixed;
-        left: -380px; /* Distance from the left edge */
-      }
-
-      .navigation a.right {
-        position: fixed;
-        right: 380px; /* Distance from the right edge */
-      }
-
-      /* Media Queries for Responsiveness */
-      @media (max-width: 1430px) {
-        .container {
-          width: 100%;
-          height: auto;
-        }
-        .header h1 {
-          font-size: 6vw;
-        }
-        .text {
-          font-size: 1.5rem;
-        }
-        .page-number {
-          font-size: 1rem;
-        }
+        font-size: calc(var(--base-font-size) * .63);
       }
     </style>
   </head>
@@ -222,7 +33,7 @@
     <div class="container">
       <div class="content">
         <div class="header">
-          <p class="right">មេរៀនទី១</p>
+          <p>មេរៀនទី១</p>
         </div>
         <div class="text">
           <p>
@@ -265,14 +76,13 @@
             ហើយប្រឹងប្រែងធ្វើការងារតាំងពីពេលនោះមករហូតដល់បានសម្រេច។
           </p>
         </div>
-
         <div class="page-number">៣</div>
-        <!-- Navigation Arrows -->
-        <div class="navigation">
-          <a href="page2.html" class="left">&#8592;</a>
-          <a href="page4.html" class="right">&#8594;</a>
-        </div>
       </div>
+    </div>
+
+    <div class="navigation">
+      <a href="page2.html" class="left">&#8592;</a>
+      <a href="page4.html" class="right">&#8594;</a>
     </div>
   </body>
 </html>

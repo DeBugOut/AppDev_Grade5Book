@@ -1,0 +1,122 @@
+/* Base Styles */
+:root {
+  --container-width: 1430px;
+  --base-font-size: calc(
+    var(--container-width) * 0.025
+  ); /* 36px at full width */
+}
+
+body {
+  font-family: "Hanuman", serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: var(--container-width);
+  height: calc(var(--container-width) * 2070 / 1430);
+  margin: 50px auto;
+  padding: 80px;
+  border: 1px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  padding: 0px 80px 0px 35px;
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid black;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.header img {
+  width: 75px;
+  height: auto;
+}
+
+.header h1 {
+  font-size: calc(var(--base-font-size) * 1.4);
+  margin: 0;
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 33px;
+}
+
+/* Text Content */
+.text {
+  text-align: left;
+  font-size: var(--base-font-size);
+  line-height: 2.2;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.text h2 {
+  text-align: center;
+}
+
+/* Page Number */
+.page-number {
+  position: absolute;
+  bottom: 50px;
+  right: 75px;
+  font-size: calc(var(--base-font-size) * 0.97);
+}
+
+/* Navigation */
+.navigation {
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-size: calc(var(--base-font-size) * 1.4);
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  pointer-events: all;
+}
+
+.navigation a:hover {
+  color: orange;
+}
+
+.navigation a.left {
+  position: fixed;
+  left: 0px;
+}
+
+.navigation a.right {
+  position: fixed;
+  right: 0px;
+}
