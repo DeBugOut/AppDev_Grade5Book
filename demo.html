@@ -1,50 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="km">
 <head>
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.speaker {
-  display: inline-block;
-  width: 80px; /* Adjust width as needed */
-  font-weight: bold;
-  margin-right: 10px; /* Adjust margin as needed */
-}
-
-.text {
-  display: inline-block;
-}
-
-.highlighted {
-  background-color: yellow; /* Highlight color */
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poem Layout</title>
+    <style>
+        body {
+            font-family: 'Khmer OS', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 100px;
+        }
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .poem {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .column {
+            width: 30%;
+            text-align: center;
+        }
+        .verse {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-
-<div class="container">
-  <div class="speaker">Tola:</div>
-  <div class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-</div>
-
-<div class="container">
-  <div class="speaker">Lok Ta:</div>
-  <div class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-</div>
-
-<div class="container">
-  <div class="speaker">Tola:</div>
-  <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</div>
-</div>
-
+    <div class="container">
+        <div class="header">
+            <img src="illustration.png" alt="Illustration">
+            <div class="title">អត្ថបទកកិច</div>
+        </div>
+        <div class="poem">
+            <div class="column">
+                <p class="verse">សូមចងចាំផង<br>សូមចងចាំផង</p>
+                <p class="verse">សូមចងចាំផង<br>សូមចងចាំផង</p>
+            </div>
+            <div class="column">
+                <p class="verse">អូនស្រលាញ់បង<br>អូនស្រលាញ់បង</p>
+                <p class="verse">អូនស្រលាញ់បង<br>អូនស្រលាញ់បង</p>
+            </div>
+            <div class="column">
+                <p class="verse">អារម្មណ៍ស្រឡាញ់<br>អារម្មណ៍ស្រឡាញ់</p>
+                <p class="verse">អារម្មណ៍ស្រឡាញ់<br>អារម្មណ៍ស្រឡាញ់</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
