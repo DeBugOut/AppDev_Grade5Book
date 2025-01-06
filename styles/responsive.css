@@ -66,7 +66,7 @@ img {
         padding: 8px 16px;
     }
   
-    img {
+    .img {
         width: var(--container-width); /* Matches container width */
         max-width: 100%; /* Prevents overflow */
     }
@@ -95,7 +95,7 @@ img {
         padding: 5px 10px;
     }
   
-    img {
+    .img {
         width: var(--container-width); /* Matches container width */
         max-width: 100%; /* Prevents overflow */
     }
