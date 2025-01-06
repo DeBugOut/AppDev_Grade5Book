@@ -1,0 +1,52 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite
+*.sql
+
+# Node.js files (if using npm packages for tools like Sass or PostCSS)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build directories (if using build tools)
+dist/
+build/
+
+# Sass/SCSS cache files
+.sass-cache/
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Backup files
+*.bak
+*.swp
+*.old
+*.orig
+*.~*
+
+# Generated files
+*.min.css
+*.min.js
+*.map
+*.gz
+*.zip
+
+# macOS Finder files
+._*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
