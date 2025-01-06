@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grade 5 Book</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -7,190 +10,64 @@
       href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Moul&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/styles/font.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <link rel="stylesheet" href="/styles/utilities.css" />
     <style>
-      /* Fonts */
-      .moul-regular {
-        font-family: "Moul", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .hanuman-thin {
-        font-family: "Hanuman", serif;
-        font-weight: 100;
-        font-style: normal;
-      }
-      .hanuman-light {
-        font-family: "Hanuman", serif;
-        font-weight: 300;
-        font-style: normal;
-      }
-      .hanuman-regular {
-        font-family: "Hanuman", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .hanuman-bold {
-        font-family: "Hanuman", serif;
-        font-weight: 700;
-        font-style: normal;
-      }
-      .hanuman-black {
-        font-family: "Hanuman", serif;
-        font-weight: 900;
-        font-style: normal;
-      }
-
-      /* Base Styles */
-      body {
-        font-family: "Hanuman", serif;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        background-color: #fff;
-      }
-
-      .container {
-        width: 1430px;
-        height: 2070px;
-        margin: 50px auto;
-        padding: 80px;
-        border: 1px solid #000;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
       .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 3px solid black;
-        padding-bottom: 20px;
-        margin-bottom: 50px;
-        width: 100%;
+        border: 0px;
+        margin-bottom: -35px;
+        text-align: right !important;
+        justify-content: flex-end !important;
       }
 
-      .header img {
-        width: 150px;
-      }
-
-      .header h1 {
-        font-size: 81px;
+      .header p {
+        text-align: right !important;
         margin: 0;
-        flex-grow: 1;
-        text-align: center;
-      }
-
-      .images {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        width: 100%;
-        margin-bottom: 0px;
-      }
-
-      .images .image-container {
-        text-align: center;
-      }
-
-      .images img {
-        width: 100%;
-        height: auto;
-        border: 1px solid black;
-      }
-
-      .text {
-        text-align: left;
-        font-size: 40px;
-        line-height: 2.2;
-        margin-top: 0px;
-        width: 100%;
-      }
-
-      .page-number {
-        text-align: right;
-        font-size: 35px;
-        margin-top: -25px;
-        width: 100%;
-      }
-
-      /* Navigation Arrows */
-      .navigation {
-        position: fixed;
-        top: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
-        margin-top: 0px;
-      }
-
-      .navigation a {
-        text-decoration: none;
-        font-size: 50px;
-        color: black;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 10px 20px;
-        border-radius: 50%;
-        transition: background 0.3s;
-      }
-
-      .navigation a:hover {
-        background: rgba(200, 200, 200, 0.8);
-      }
-
-      /* Media Queries for Responsiveness */
-      @media (max-width: 1430px) {
-        .container {
-          width: 100%;
-          height: auto;
-        }
-        .header h1 {
-          font-size: 6vw;
-        }
-        .text {
-          font-size: 1.5rem;
-        }
-        .page-number {
-          font-size: 1rem;
-        }
+        font-size: calc(var(--base-font-size) * 0.63);
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="text">
-        <p class="hanuman-bold" style="line-height:1.5">តុលា&emsp;&emsp;:<span class="hanuman-regular">&emsp; លោកតា! តើគាត់មានស្នាដៃធំៗអ្វីខ្លះខាងកំណាព្យ?</span></p>
-        <p class="hanuman-bold" style="line-height:1.5"​>លោកតា&emsp;  :<span class="hanuman-regular">&emsp; កំណាព្យរបស់គាត់មានដូចជាច្បាប់ល្បើកថ្មី សេចក្ដីរំឭកដាស់តឿន ច្បាប់កេរកាលថ្មី &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;និងច្បាប់ប្រដៅជនប្រុសស្រី ណា៎ចៅ!</span></p>
-        <p class="hanuman-bold" style="line-height:1.5">តុលា&emsp;&emsp;:<span class="hanuman-regular">&emsp; យីលោកតា! លោកកវីក្រម ង៉ុយ ជាមនុស្សគួរឲកោតសរសើរណាស់។ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ខ្ញុំនឹងខិតខំរៀនសូត្រពីស្នាដៃរបស់គាត់។</span></p>
+      <div class="content">
+        <div class="header">
+          <p class="right">មេរៀនទី៣</p>
+        </div>
+        <div class="text">
+          <div class="text">
+            <p class="hanuman-bold" style="line-height:1.5">តុលា&emsp;&emsp;:<span class="hanuman-regular">&emsp; លោកតា! តើគាត់មានស្នាដៃធំៗអ្វីខ្លះខាងកំណាព្យ?</span></p>
+            <p class="hanuman-bold" style="line-height:1.5"​>លោកតា&emsp;  :<span class="hanuman-regular">&emsp; កំណាព្យរបស់គាត់មានដូចជាច្បាប់ល្បើកថ្មី សេចក្ដីរំឭកដាស់តឿន ច្បាប់កេរកាលថ្មី &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;និងច្បាប់ប្រដៅជនប្រុសស្រី ណា៎ចៅ!</span></p>
+            <p class="hanuman-bold" style="line-height:1.5">តុលា&emsp;&emsp;:<span class="hanuman-regular">&emsp; យីលោកតា! លោកកវីក្រម ង៉ុយ ជាមនុស្សគួរឲកោតសរសើរណាស់។ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ខ្ញុំនឹងខិតខំរៀនសូត្រពីស្នាដៃរបស់គាត់។</span></p>
+          </div>
+          <br>
+    
+          <div class="text">
+            <p class="hanuman-bold">សំណួរ</p>
+            <p class="hanuman-regular" style="line-height:1">&emsp;&emsp;១.&emsp;តើលោកតាក្រមង៉ុយកើតនៅឯណា?</p>
+            <p class="hanuman-regular" style="line-height:1">&emsp;&emsp;២.&emsp;តើគាត់កើតនិងស្លាប់នៅឆ្នាំណា?</p>
+            <p class="hanuman-regular" style="line-height:1">&emsp;&emsp;៣.&emsp;តើលោកតាក្រុមង៉ុយល្បីល្បាញដោយសារអ្វី?</p>
+            <p class="hanuman-regular" style="line-height:1">&emsp;&emsp;៤.&emsp;តើគាត់មានស្នាដៃអ្វីខ្លះ?</p>   
+          </div>
+          
+          <div class="text">
+            <p class="hanuman-bold">លំហាត់</p>
+            <p class="hanuman-regular" style="line-height:1.5">&emsp;&emsp;ចូររៀបជាក្រុមតូចៗ រួចរៀបរាប់ពីអ្នកមានស្នាដៃណាម្នាក់ ដែលអ្នកបានស្គាល់ប្រាប់សមាជិកក្រុមរបស់អ្នកដោយប្រាប់ &emsp;៖</p> 
+            <ul class="text" style="margin-left:100px;">
+                <li>ឈ្មោះ ភេទ អាយុ</li>
+                <li>ទីកន្លែងកំណើត</li>
+                <li>ស្នាដៃ។</li>
+            </ul> 
+          </div>
+        </div>
+        <div class="page-number">៤១</div>
       </div>
-      <br><br>
+    </div>
 
-      <div class="text">
-        <p class="hanuman-bold">សំណួរ</p>
-        <p class="hanuman-regular" style="line-height:1">&emsp;&emsp;១.&emsp;តើលោកតាក្រមង៉ុយកើតនៅឯណា?</p>
-        <p class="hanuman-regular" style="line-height:1">&emsp;&emsp;២.&emsp;តើគាត់កើតនិងស្លាប់នៅឆ្នាំណា?</p>
-        <p class="hanuman-regular" style="line-height:1">&emsp;&emsp;៣.&emsp;តើលោកតាក្រុមង៉ុយល្បីល្បាញដោយសារអ្វី?</p>
-        <p class="hanuman-regular" style="line-height:1">&emsp;&emsp;៤.&emsp;តើគាត់មានស្នាដៃអ្វីខ្លះ?</p>   
-      </div>
-      
-      <div class="text">
-        <p class="hanuman-bold">លំហាត់</p>
-        <p class="hanuman-regular" style="line-height:1.5">&emsp;&emsp;ចូររៀបជាក្រុមតូចៗ រួចរៀបរាប់ពីអ្នកមានស្នាដៃណាម្នាក់ ដែលអ្នកបានស្គាល់ប្រាប់សមាជិកក្រុមរបស់អ្នកដោយប្រាប់ &emsp;៖</p> 
-        <ul class="text" style="margin-left:100px;">
-            <li>ឈ្មោះ ភេទ អាយុ</li>
-            <li>ទីកន្លែងកំណើត</li>
-            <li>ស្នាដៃ។</li>
-        </ul> 
-      </div>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <div class="page-number">៤១</div>
-      <div class="navigation">
-        <a href="page42.html" class="left">&#8592;</a>
-        <a href="page42.html" class="right">&#8594;</a>
-      </div>
-    </div>   
+    <div class="navigation">
+      <a href="page40.html" class="left">&#8592;</a>
+      <a href="page42.html" class="right">&#8594;</a>
+    </div>
   </body>
 </html>
