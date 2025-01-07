@@ -1,66 +1,83 @@
 <!DOCTYPE html>
-<html lang="km">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poem Layout</title>
+    <title>Khmer Text Exercise</title>
     <style>
         body {
-            font-family: 'Khmer OS', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            line-height: 1.8;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
             padding: 20px;
         }
-        .header {
-            text-align: center;
+
+        .exercise-container {
+            border: 1px solid #ccc;
+            padding: 20px;
             margin-bottom: 20px;
         }
-        .header img {
-            width: 100px;
-        }
-        .title {
-            font-size: 2rem;
+
+        .exercise-title {
             font-weight: bold;
+            margin-bottom: 10px;
         }
-        .poem {
+
+        .question-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .question-list li {
+            margin-bottom: 5px;
+        }
+
+        .answer-choices {
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            margin-top: 10px;
         }
-        .column {
-            width: 30%;
-            text-align: center;
-        }
-        .verse {
-            margin-bottom: 20px;
+
+        .answer-choice {
+            margin-right: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="images/Reading.jpg" alt="Illustration">
-            <div class="title">អត្ថបទកកិច</div>
-        </div>
-        <div class="poem">
-            <div class="column">
-                <p class="verse">សូមចងចាំផង<br>សូមចងចាំផង</p>
-                <p class="verse">សូមចងចាំផង<br>សូមចងចាំផង</p>
-            </div>
-            <div class="column">
-                <p class="verse">អូនស្រលាញ់បង<br>អូនស្រលាញ់បង</p>
-                <p class="verse">អូនស្រលាញ់បង<br>អូនស្រលាញ់បង</p>
-            </div>
-            <div class="column">
-                <p class="verse">អារម្មណ៍ស្រឡាញ់<br>អារម្មណ៍ស្រឡាញ់</p>
-                <p class="verse">អារម្មណ៍ស្រឡាញ់<br>អារម្មណ៍ស្រឡាញ់</p>
-            </div>
+
+    <div class="exercise-container">
+        <h2 class="exercise-title">Exercise 1</h2>
+        <ol class="question-list">
+            <li>បងខ្ញុំ</li>
+            <li>ប្រជាជនខ្លះ</li>
+            <li>កាសែតនេះ</li>
+            <li>តើអ្នក</li>
+            <li>សិស្ស</li>
+        </ol>
+        <div class="answer-choices">
+            <span class="answer-choice">ក. មិនទាន់ចេះអក្សរ</span>
+            <span class="answer-choice">ខ. អានកាសែតនៅសាលារៀន</span>
+            <span class="answer-choice">គ. ត្រូវការសារព័ត៌មានអ្វី?</span>
+            <span class="answer-choice">ឃ. ដើរលក់កាសែត</span>
+            <span class="answer-choice">ង. លក់ដាច់ជាងគេ</span>
         </div>
     </div>
+
+    <div class="exercise-container">
+        <h2 class="exercise-title">Exercise 2</h2>
+        <ol class="question-list">
+            <li>ចិត្ត</li>
+            <li>អាកាស</li>
+            <li>នៅ</li>
+            <li>ល្អ</li>
+            <li>រស់</li>
+        </ol>
+        <div class="answer-choices">
+            <span class="answer-choice">ក. យើង</span>
+            <span class="answer-choice">ខ. ខ្យល់</span>
+            <span class="answer-choice">គ. នៅ</span>
+            <span class="answer-choice">ឃ. ទីនេះ</span>
+            <span class="answer-choice">ង. សប្បាយ</span>
+        </div>
+    </div>
+
 </body>
 </html>
