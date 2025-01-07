@@ -61,16 +61,43 @@
   margin-top: 8px !important;
 }
 .mt-3 {
-    margin-top: 25px !important;
+  margin-top: 25px !important;
 }
 .mt-4 {
-    margin-top: 35px !important;
+  margin-top: 35px !important;
+}
+.mt-5 {
+  margin-top: 50px !important;
+}
+.mt--1{
+  margin-top: -10px !important;
+}
+.mt--2{
+  margin-top: -15px !important;
+}
+.mt--3{
+  margin-top: -20px !important;
 }
 .mb-1 {
   margin-bottom: 4px !important;
 }
 .mb-2 {
   margin-bottom: 8px !important;
+}
+.mb--1{
+  margin-bottom: -10px !important;
+}
+.mb--2{
+  margin-bottom: -15px !important;
+}
+.mb--3{
+  margin-bottom: -20px !important;
+}
+.mb--4{
+  margin-bottom: -25px !important;
+}
+.mb--5{
+  margin-bottom: -30px !important;
 }
 .ml-1 {
   margin-left: 4px !important;
@@ -82,10 +109,10 @@
   margin-left: 25px !important;
 }
 .ml-4 {
-    margin-left: 50px !important;
+  margin-left: 50px !important;
 }
 .ml-5 {
-    margin-left: 75px !important;
+  margin-left: 75px !important;
 }
 .mr-1 {
   margin-right: 4px !important;
@@ -97,10 +124,10 @@
   margin-right: 25px !important;
 }
 .mr-4 {
-    margin-right: 50px !important;
+  margin-right: 50px !important;
 }
 .mr-5 {
-    margin-right: 75px !important;
+  margin-right: 75px !important;
 }
 .p-0 {
   padding: 0 !important;
@@ -304,4 +331,31 @@
   text-align: left !important;
   margin-top: -30px;
   margin-bottom: 20px !important;
+}
+
+/* Utilities for Text Indentation */
+
+/* No Indent */
+.indent-0 {
+  text-indent: 0;
+}
+
+/* Level 1 Indent */
+.indent-1 {
+  text-indent: 27px;
+}
+
+/* Level 2 Indent */
+.indent-2 {
+  text-indent: 54px;
+}
+
+/* Level 3 Indent */
+.indent-3 {
+  text-indent: 81px;
+}
+
+/* Negative Indent */
+.indent-neg {
+  text-indent: -27px;
 }
