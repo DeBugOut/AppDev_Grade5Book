@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/styles/utilities.css" />
     <style>
       .header {
-        border: 0px;
+        border: 0px !important;
         margin-bottom: -35px;
         text-align: right !important;
         justify-content: flex-end !important;
@@ -29,7 +29,33 @@
       }
 
       .image-container img {
-        width: calc(var(--container-width) * 0.07);
+        width: calc(var(--container-width) * 0.75);
+        margin-top: 55px;
+      }
+
+      .text h1 {
+        font-size: calc(var(--base-font-size) * 1.15);
+        margin-bottom: -25px;
+      }
+
+      .mt-n {
+        margin-top: -25px;
+      }
+
+      .checkbox-container {
+        display: flex;
+        gap: 20px;
+      }
+
+      .checkbox-container label {
+        display: flex;
+        align-items: center;
+      }
+
+      .checkbox-container input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+        transform: scale(1.5);
       }
     </style>
   </head>
@@ -47,7 +73,33 @@
           <img alt="Story Figure" src="/images/Page7Image1.png" />
         </div>
         <div class="text">
-          <p>&emsp;&emsp;&emsp;abc test</p>
+          <h1>សំណួរ</h1>
+          <p class="pl-3">
+            ១. តើរឿងនេះមានតួអង្គណាខ្លះ? តើតួអង្គនីមួយៗធ្វើសកម្មភាពអ្វីខ្លះ?
+            <br />
+            ២. តើរឿងនេះកើតឡើងនៅកន្លែងណាខ្លះ? នៅពេលណា? <br />
+            ៣. តើនឹងមានរឿងអ្វីកើតឡើង នៅពេលទន្សាយបន្លំអានសំបុត្ររបស់ព្រះឥន្ទ្រ?
+          </p>
+          <h1 class="mb-1 mt-n">លំហាត់</h1>
+          <p class="m-0 font-bold">ក. ចូរធ្វើការប្រៀបធៀបតួអង្គចចក និងកំពឹស ។</p>
+          <p class="m-0 font-bold">
+            ខ. ចូរគូសសញ្ញា ⁄
+            នៅមុខចម្លើយមួយដែលបង្ហាញចរិតលក្ខណៈរបស់តួអង្គត្រីក្រាញ់ ។ <br />
+          </p>
+          <div class="checkbox-container pl-3">
+            <label><input type="checkbox" class="mr-3"> ១. ខិលខូច</label>
+            <label><input type="checkbox" class="mr-3 ml-5"> ២. ក្លាហាន</label>
+            <label><input type="checkbox" class="mr-3 ml-5"> ៣. ឧស្សាហ៍</label>
+          </div>
+          <p class="m-0 font-bold">
+            គ. ចូរគូសសញ្ញា √ នៅមុខចម្លើយមួយ ដែលបង្ហាញថវិតលក្ខណៈរបស់តួអង្គចចក ។
+            <br />
+          </p>
+          <div class="checkbox-container pl-3">
+            <label><input type="checkbox" class="mr-3"> ១. កាចសាហាវ</label>
+            <label><input type="checkbox" class="mr-3 ml-5"> ២. ចង្អៀតចង្អល់</label>
+            <label><input type="checkbox" class="mr-3 ml-5"> ៣. ឆ្លាតវាងវៃ</label>
+          </div>
         </div>
         <div class="page-number">៧</div>
       </div>
@@ -55,7 +107,7 @@
 
     <div class="navigation">
       <a href="page6.html" class="left">&#8592;</a>
-      <a href="page5.html" class="right">&#8594;</a>
+      <a href="page8.html" class="right">&#8594;</a>
     </div>
   </body>
 </html>
