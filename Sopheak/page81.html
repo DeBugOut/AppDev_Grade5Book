@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/styles/utilities.css" />
     <style>
       .header {
-        border: 0px;
+        border: 0px !important;
         margin-bottom: -35px;
         text-align: right !important;
         justify-content: flex-end !important;
@@ -27,24 +27,90 @@
         margin: 0;
         font-size: calc(var(--base-font-size) * 0.63);
       }
+
+      .header h1 {
+        margin-top: 15px;
+      }
+
+      .header img {
+        width: calc(var(--container-width) * 0.055);
+        height: auto;
+      }
+
+      .t-s {
+        font-size: calc(var(--base-font-size) * 0.7);
+      }
+
+      table {
+        border-collapse: collapse; /* Merges borders into a single line */
+        width: 100%;
+        margin: 20px auto;
+      }
+
+      th,
+      td {
+        border: 3.5px solid #000;
+        padding: 20px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="content">
         <div class="header">
-          <p class="right">មេរៀនទី១</p>
+          <p class="right">មេរៀនទី៦</p>
         </div>
         <div class="text">
-          <p>&emsp;&emsp;&emsp;abc</p>
+          <h3 class="mt--3 mb--5">លំហាត់</h3>
+          <p class="pl-3">
+            ចូរអ្នកចុះកំណត់ត្រានៅក្នុងសៀវភៅដោយឡែកមួយតាមគំរូខាងក្រោម​​ ៖
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>កាលបរិច្ឆេទ</th>
+                <th>ហេតុការណ៏/សកម្មភាព</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ថ្ងៃទី.......ខែ.......ឆ្នាំ.......</td>
+                <td>.............................</td>
+              </tr>
+              <tr>
+                <td>ថ្ងៃទី.......ខែ.......ឆ្នាំ.......</td>
+                <td>.............................</td>
+              </tr>
+              <tr>
+                <td>ថ្ងៃទី.......ខែ.......ឆ្នាំ.......</td>
+                <td>.............................</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="header">
+            <img alt="Decorative icon" src="/images/Reading.jpg" />
+            <h1>បំភ្លេចមិនបាន</h1>
+          </div>
+          <p class="indent-3 mb--2">
+            នៅពេលវិស្សមកាលកន្លងទៅថ្មីៗនេះ ម្តាយសុជាតាបាននាំសុជាតាទៅលេងផ្ទះពូ
+            របស់នាងនៅទីក្រុងភ្នំពេញ។ ពូរបស់នាងបាននាំនាង និងម្តាយនាង ទៅដើរលេងនៅ
+            កន្លែងប្លែកៗមួយចំនួន។ នាងបានជួបហេតុការណ៏គួរឱ្យចាប់អារម្មណ៏ជាច្រើន​ នៅពេល
+            ដើរទស្សនាកន្លែងទាំងនោះ។ សុជាតា បានសរសេររៀបរាប់ហេតុការណ៏ទាំងនេះ នៅ
+            ក្នុងសៀវភៅកំណត់ត្រាប្រចាំថ្ងៃរបស់នាង។ 
+          </p>
+          <p class="indent-3 font-bold">ថ្ងៃទី ០១ ខែ សីហា ឆ្នាំ២០០៩</p>
+          <div class="image-container">
+            <img alt="Story Figure" src="/images/page81Image.png" />
+          </div>
         </div>
-        <div class="page-number">៣</div>
+        <div class="page-number">៨១</div>
       </div>
     </div>
 
     <div class="navigation">
-      <a href="page1.html" class="left">&#8592;</a>
-      <a href="page3.html" class="right">&#8594;</a>
+      <a href="page80.html" class="left">&#8592;</a>
+      <a href="page82.html" class="right">&#8594;</a>
     </div>
   </body>
 </html>
