@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade 5 Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Moul&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/font.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <link rel="stylesheet" href="/styles/utilities.css" />
+    <style>
+      :root {
+        --container-width: 1600px;
+        --container-height: 2240px;
+        --base-font-size: calc(
+          var(--container-width) * 0.026
+        ); /* 36px at full width */
+      }
+
+      body {
+        font-family: "Hanuman", serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        width: calc(var(--container-width) * 1);
+        height: var(--container-height);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container img {
+        width: 100%; /* Image will match the container's width */
+        height: auto; /* Maintain the image's aspect ratio */
+        object-fit: cover; /* Ensure the entire image fits inside the container */
+      }
+
+      .navigation {
+        position: fixed;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      .navigation a {
+        text-decoration: none;
+        font-size: calc(var(--base-font-size) * 1.4);
+        color: black;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px 20px;
+        border-radius: 50%;
+        transition: all 0.3s;
+        pointer-events: all;
+      }
+
+      .navigation a:hover {
+        color: orange;
+      }
+
+      .navigation a.left {
+        position: fixed;
+        left: 0px;
+      }
+
+      .navigation a.right {
+        position: fixed;
+        right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="/images/Cover.jpeg" alt="Cover" />
+    </div>
+    <div class="navigation">
+      <a href="innercover.html" class="right">&#8594;</a>
+    </div>
+  </body>
+</html>
