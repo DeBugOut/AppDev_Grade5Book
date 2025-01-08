@@ -111,6 +111,9 @@
 .mb--5{
   margin-bottom: -30px !important;
 }
+.mb--6{
+  margin-bottom: -50px !important;
+}
 .ml-1 {
   margin-left: 4px !important;
 }
@@ -370,4 +373,17 @@
 /* Negative Indent */
 .indent-neg {
   text-indent: -27px;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+/* for source */
+.t-s {
+  font-size: calc(var(--base-font-size) * 0.75);
 }

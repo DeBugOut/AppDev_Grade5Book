@@ -15,88 +15,135 @@
     <link rel="stylesheet" href="/styles/responsive.css" />
     <link rel="stylesheet" href="/styles/utilities.css" />
     <style>
+      /* Page Number Style */
       .page-number {
         left: -1270px !important;
         bottom: 50px !important;
       }
 
-      .header p {
-        text-align: left !important;
-        margin: 0;
-        font-size: calc(var(--base-font-size) * 0.63);
+      /* Text Content */
+      .text p {
+        line-height: 1.5;
+        margin-bottom: 20px;
       }
 
       .header {
         border: 0 !important;
+        margin-bottom: 0px;
       }
-      .text p {
-        line-height: 1.1 !important;
-        margin-bottom: 20px;
+
+      /* Navigation */
+      .navigation {
+        position: fixed;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        pointer-events: none;
+        z-index: 10;
       }
-      
+
+      .navigation a {
+        text-decoration: none;
+        font-size: calc(var(--base-font-size) * 1.4);
+        color: black;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px 20px;
+        border-radius: 50%;
+        transition: all 0.3s;
+        pointer-events: all;
+      }
+
+      .navigation a:hover {
+        color: orange;
+      }
+
+      .navigation a.left {
+        position: fixed;
+        left: 0px;
+      }
+
+      .navigation a.right {
+        position: fixed;
+        right: 0px;
+      }
+
+      .xyz p {
+        margin-bottom: -8px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="content">
         <div class="header">
-          <h1 class="hanuman-bold text-center">(បទពាក្យប្រាំពីរ)</h1>
+          <h1 class="text-center">(បទពាក្យប្រាំពីរ)</h1>
         </div>
         <div class="text">
-            <table border="0" style="width: 100%; text-align: center;">
-                <tr>
-                    <td style="width: 50%; vertical-align: top; padding-right: 10px;">
-                        <p>យើងកើតជាមនុស្សប្រសើរក្តាត់</p>
-                        <p>មានរូប មានរាងល្អប្រពៃ</p>
-                        <p>ប្រាជ្ញាជាគ្រឿងដុសខាត់យើង</p>
-                        <p>ប្រកបប្ញកពាចរិយាធម៌</p>
-                        <p>សមរូប ល្អឬក ល្អចរិយា</p>
-                        <p>ឈ្មោះថាល្អពិតគួរប្រមាណ</p>
-                        <p>រូបល្អហើយតខ្វះចរិយា</p>
-                        <p>មិនបានគាប់ភ្នែកជនគ្រប់គ្នា</p>
-                        <p>សម្តីសម្តងមិនសមរម្យទោះ</p>
-                        <p>ទោះទៅទីណាគ្មានគេរើស</p>
-                    </td>
-                    <td style="width: 50%; vertical-align: top; padding-left: 10px;">
-                        <p>លើសអស់សព្វសត្វលើផែនដី</p>
-                        <p>ប្រាជ្ញាកែច្នៃរឹតតែល្អ ។</p>
-                        <p>ឱ្យបានរុងរឿងថ្កើងបវរ</p>
-                        <p>ផ្សំនឹងលម្អនៃអង្គប្រាណ ។</p>
-                        <p>គ្មានទើសនេតនោះទើបបាន</p>
-                        <p>រករៀនឱ្យបានសព្វវិជ្ជ ។</p>
-                        <p>ជាអលង្ការនោះមុខជា</p>
-                        <p>ព្រោះមានប្ញកពាចឡើសបើស ។</p>
-                        <p>ឬកមិនរម្យទមឃើញទាក់ទើស</p>
-                        <p>ពុំមានគេជ្រើសធ្វើជាមិត្ត ។</p>
-                        
-                    </td>
-                </tr>
-            </table>
-            <p class="hanuman-bold" style="text-align: right; margin-top: 30px; font-size: 30px;">
-                (ដកស្រង់ពីសៀវភៅរៀនអក្សរថ្នាក់ទី៥ ភាគ២)
-            </p>
-            <p class="hanuman-bold">សំណួរ</p>
-          <p>&emsp;&emsp;&emsp;១. តើមនុស្សល្អត្រូវមានអ្វីខ្លះ ? </p>
-          <p>&emsp;&emsp;&emsp;២. តើក្នុងកំណាព្យនេះ គេប្រៀបធៀប “ ចរិយា” ទៅនឹងអ្វី ?</p>
-          <p>&emsp;&emsp;&emsp;៣. តើឫកពាបែបណា ដែលគេចាត់ទុកថាជាឫកពាសមរម្យ ?</p>
-          <P>&emsp;&emsp;&emsp;៤. តើឫកពាបែបណា ដែលគេចាត់ទុកថាជាឫកញច្រឡើសបើស ?</P>
+          <table border="0" style="width: 100%; text-align: center">
+            <tr>
+              <td class="xyz" style="width: 50%; vertical-align: top; padding-right: 10px">
+                <p>យើងកើតជាមនុស្សប្រសើរក្តាត់</p>
+                <p>មានរូប មានរាងល្អប្រពៃ</p>
+                <p>ប្រាជ្ញាជាគ្រឿងដុសខាត់យើង</p>
+                <p>ប្រកបប្ញកពាចរិយាធម៌</p>
+                <p>សមរូប ល្អឬក ល្អចរិយា</p>
+                <p>ឈ្មោះថាល្អពិតគួរប្រមាណ</p>
+                <p>រូបល្អហើយតខ្វះចរិយា</p>
+                <p>មិនបានគាប់ភ្នែកជនគ្រប់គ្នា</p>
+                <p>សម្តីសម្តងមិនសមរម្យទោះ</p>
+                <p>ទោះទៅទីណាគ្មានគេរើស</p>
+              </td>
+              <td class="xyz" style="width: 50%; vertical-align: top; padding-left: 10px">
+                <p>លើសអស់សព្វសត្វលើផែនដី</p>
+                <p>ប្រាជ្ញាកែច្នៃរឹតតែល្អ ។</p>
+                <p>ឱ្យបានរុងរឿងថ្កើងបវរ</p>
+                <p>ផ្សំនឹងលម្អនៃអង្គប្រាណ ។</p>
+                <p>គ្មានទើសនេតនោះទើបបាន</p>
+                <p>រករៀនឱ្យបានសព្វវិជ្ជ ។</p>
+                <p>ជាអលង្ការនោះមុខជា</p>
+                <p>ព្រោះមានប្ញកពាចឡើសបើស ។</p>
+                <p>ឬកមិនរម្យទមឃើញទាក់ទើស</p>
+                <p>ពុំមានគេជ្រើសធ្វើជាមិត្ត ។</p>
+              </td>
+            </tr>
+          </table>
+          <p
+            class="hanuman-bold"
+            style="text-align: right; margin-top: 30px; font-size: 18px"
+          >
+            (ដកស្រង់ពីសៀវភៅរៀនអក្សរថ្នាក់ទី៥ ភាគ២)
+          </p>
+          <p class="hanuman-bold">សំណួរ</p>
+          <p class="pl-3 mb--2">១. តើមនុស្សល្អត្រូវមានអ្វីខ្លះ ?</p>
+          <p class="pl-3 mb--2">២. តើក្នុងកំណាព្យនេះ គេប្រៀបធៀប “ ចរិយា” ទៅនឹងអ្វី ?</p>
+          <p class="pl-3 mb--2">៣. តើឫកពាបែបណា ដែលគេចាត់ទុកថាជាឫកពាសមរម្យ ?</p>
+          <p class="pl-3 ">៤. តើឫកពាបែបណា ដែលគេចាត់ទុកថាជាឫកញច្រឡើសបើស ?</p>
 
           <p class="hanuman-bold">លំហាត់</p>
-          <p class="hanuman-bold">ក. ចូរគូសសញ្ញា √ ក្នុងប្រអប់ចម្លើយណា ដែលជាគំនិតសំខាន់នៃអត្ថបទកំណាព្យ ។ </p>
-        </p></strong>
-        &emsp;&emsp;<input type="checkbox" /> ១. មនុស្សត្រូវមានរូបសម្បត្តិ និងចរិយាសម្បត្តិទើបប្រពៃ ។
-        <br />
-        &emsp;&emsp;<input type="checkbox" /> ២. មនុស្សត្រូវមានរូបសម្បត្តិ ចរិយាសម្បត្តិ និងចំណេះវិជ្ជាទើបប្រពៃ ។
-        <br />
-        &emsp;&emsp;<input type="checkbox" /> ៣. មនុស្សត្រូវមានរូបសម្បត្តិ និងចំណេះវិជ្ជាទើបប្រពៃ ។
-        ព្រោះចាញ់កលស្រីៗ។ <br />
-        <strong/>
-        <p class="hanuman-bold">ខ. ចូររកពាក្យសូរដូចនឹងពាក្យ “ដុស គួរ សព្វ” ព្រមទាំងប្រាប់អត្ថន័យនៃពាក្យនីមួយៗផង ។ </p>
+          <p class="hanuman-bold">
+            ក. ចូរគូសសញ្ញា √ ក្នុងប្រអប់ចម្លើយណា ដែលជាគំនិតសំខាន់នៃអត្ថបទកំណាព្យ
+            ។
+          </p>
+          &emsp;&emsp;<input type="checkbox" /> ១. មនុស្សត្រូវមានរូបសម្បត្តិ
+          និងចរិយាសម្បត្តិទើបប្រពៃ ។
+          <br />
+          &emsp;&emsp;<input type="checkbox" /> ២. មនុស្សត្រូវមានរូបសម្បត្តិ
+          ចរិយាសម្បត្តិ និងចំណេះវិជ្ជាទើបប្រពៃ ។
+          <br />
+          &emsp;&emsp;<input type="checkbox" /> ៣. មនុស្សត្រូវមានរូបសម្បត្តិ
+          និងចំណេះវិជ្ជាទើបប្រពៃ ។ ព្រោះចាញ់កលស្រីៗ។ <br />
+          <p class="hanuman-bold">
+            ខ. ចូររកពាក្យសូរដូចនឹងពាក្យ “ដុស គួរ សព្វ”
+            ព្រមទាំងប្រាប់អត្ថន័យនៃពាក្យនីមួយៗផង ។
+          </p>
         </div>
         <div class="page-number">៣៤</div>
       </div>
     </div>
 
+    <!-- Navigation Links -->
     <div class="navigation">
       <a href="page33.html" class="left">&#8592;</a>
       <a href="page35.html" class="right">&#8594;</a>
