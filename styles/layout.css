@@ -75,6 +75,9 @@ body {
 .text h2 {
   text-align: center;
 }
+.text h3 {
+  text-align: center;
+}
 
 /* Page Number */
 .page-number {
