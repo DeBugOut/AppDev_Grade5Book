@@ -41,17 +41,20 @@
         font-size: 3px;
       }
       .t-l {
-        font-size: 35px;
+        font-size: 36px;
       }
 
       table {
         border-collapse: collapse; /* Merges borders into a single line */
-        width: 100%;
+        width: 99%;
         margin: 20px auto;
+        text-align: left;
+        table-layout: fixed;
       }
 
       th,
-      td , tr{
+      td,
+      tr {
         border: 3.5px solid #000;
         padding: 20px;
         text-align: center;
@@ -64,65 +67,113 @@
       .underline {
         text-decoration: underline;
       }
-      
-    
+
+      th,
+      td {
+        border: 2px solid #000; /* Clean black border */
+        padding: 15px 20px; /* Adds consistent space inside cells */
+        font-size: 18px; /* Standardize font size for readability */
+        vertical-align: top;
+      }
+
+      .text {
+        margin: 20px auto;
+        line-height: 1.6; /* Increase line spacing for readability */
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="content">
         <div class="header">
-            <p class="right">មេរៀនទី៧</p>
+          <p class="right">មេរៀនទី៧</p>
         </div>
-        <div class="header">
-            <img alt="Decorative icon" src="/images/Key.png" />
-            <h1> កម្រិតគុណនាម</h1>
+        <div class="header mb-1">
+          <img alt="Decorative icon" src="/images/Key.png" />
+          <h1>កម្រិតគុណនាម</h1>
         </div>
         <div class="text">
           <p>
-            &emsp;&emsp;អ្នកបានសិក្សារួចមកហើយ អំពីប្រភេទនៃគុណនាម ។ ក្នុងមេរៀនន៖ អ្នកនឹងបានសិក្សាអំពីកម្រិតរបស់គុណនាម ។
-             ចូរអានឧទាហរណ៍ខាងក្រោម ពាក្យមានគំនូសពីក្រោម បង្ហាញពីកម្រិតរបស់គុណនាម ។
-        </p>
-         </div>
-         
-            <table>
-            <thead>
-              <tr>
-                <th class="t-l">កម្រិតស្មើ</th>
-                <th class="t-l">កម្រិតមិនស្មើ</th>
-                <th class="t-l">កម្រិតផ្តាច់</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="t-l">១. សានជាសិស្សពូក<span class="underline">ដូច</span>នារីដែរ ។<br class="spacer">
-                   ២. នាងមានកាតាបស្អាត<span class="underline">ដូច</span>កាតាបបងស្រីខ្ញុំដែរ ។<br class="spacer">
-                   ៣. គាត់មានរាងខ្ពស់<span class="underline">ប្រហែល</span>ពូខ្ញុំ ។<br class="spacer">
-                   ៤. សុខទទួលបានពិន្ទុច្រើន<span class="underline">ស្មើនឹង</span>ខ្ញុំដែរ ។ 
-                  </td>
-                <td class="t-l">១. សានជាសិស្សពូក<span class="underline">ជាង</span>នារី ។<br class="spacer">
-                  ២. នាងមានកាតាបស្អាត<span class="underline">ជាង</span>កាតាបបងស្រីខ្ញុំ ។<br class="spacer">
-                  ៣. គាត់មានរាងខ្ពស់<span class="underline">លើស</span>ពូខ្ញុំ ។<br class="spacer">
-                  ៤. សុខទទួលបានពិន្ទុច្រើន<span class="underline">ជាង</span>ខ្ញុំ ។<br class="spacer">
-                </td>
-                <td class="t-l">១. សានជាសិស្សពូកែ<span class="underline">ជាងគេ</span> ។<br class="spacer">
-                  ២. នាងមានកាតាបស្អាត<span class="underline">ដាច់គេ</span> ។<br class="spacer">
-                  ៣. គាត់មានរាងខ្ពស់<span class="underline">លើសគេបំផុត</span> ។<br class="spacer">
-                  ៤. សុខទទួលបានពិន្ទុច្រើន<span class="underline">បំផុត</span> ។
+            &emsp;&emsp;អ្នកបានសិក្សារួចមកហើយ អំពីប្រភេទនៃគុណនាម ។ ក្នុងមេរៀនន៖
+            អ្នកនឹងបានសិក្សាអំពីកម្រិតរបស់គុណនាម ។ ចូរអានឧទាហរណ៍ខាងក្រោម
+            ពាក្យមានគំនូសពីក្រោម បង្ហាញពីកម្រិតរបស់គុណនាម ។
+          </p>
+        </div>
 
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <br><br><br>
-          
+        <table>
+          <thead>
+            <tr>
+              <th class="t-l">កម្រិតស្មើ</th>
+              <th class="t-l">កម្រិតមិនស្មើ</th>
+              <th class="t-l">កម្រិតផ្តាច់</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="t-l">
+                <p>
+                  ១. សានជាសិស្សពូក<span class="underline">ដូច</span>នារីដែរ ។
+                </p>
+                <p>
+                  ២. នាងមានកាតាបស្អាត<span class="underline">ដូច</span
+                  >កាតាបបងស្រីខ្ញុំដែរ ។
+                </p>
+                <p>
+                  ៣. គាត់មានរាងខ្ពស់<span class="underline">ប្រហែល</span>ពូខ្ញុំ
+                  ។
+                </p>
+                <p>
+                  ៤. សុខទទួលបានពិន្ទុច្រើន<span class="underline">ស្មើនឹង</span
+                  >ខ្ញុំដែរ ។
+                </p>
+              </td>
+              <td class="t-l">
+                <p>១. សានជាសិស្សពូក<span class="underline">ជាង</span>នារី ។</p>
+                <p>
+                  ២. នាងមានកាតាបស្អាត<span class="underline">ជាង</span
+                  >កាតាបបងស្រីខ្ញុំ ។
+                </p>
+                <p>
+                  ៣. គាត់មានរាងខ្ពស់<span class="underline">លើស</span>ពូខ្ញុំ ។
+                </p>
+                <p>
+                  ៤. សុខទទួលបានពិន្ទុច្រើន<span class="underline">ជាង</span
+                  >ខ្ញុំ ។
+                </p>
+              </td>
+              <td class="t-l">
+                <p>១. សានជាសិស្សពូកែ<span class="underline">ជាងគេ</span> ។</p>
+                <p>
+                  ២. នាងមានកាតាបស្អាត<span class="underline">ដាច់គេ</span> ។
+                </p>
+                <p>
+                  ៣. គាត់មានរាងខ្ពស់<span class="underline">លើសគេបំផុត</span> ។
+                </p>
+                <p>
+                  ៤. សុខទទួលបានពិន្ទុច្រើន<span class="underline">បំផុត</span> ។
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+
         <div class="text">
-            <p>- ឧទាហរណ៍ក្នុងខ្ទង់ទី១បង្ហាញគុណនាមកម្រិតស្មើ ។ គេប្រើពាក្យ “ ដូចប្រហែល ស្មើ ” ។</p>
-            <p>- ឧទាហរណ៍ក្នុងខ្ទង់ទី២បង្ហាញគុណនាមកម្រិតមិនស្មើ ។ គេប្រើពាក្យ“ ជាងលើស ” ។</p>
-            <p>- ឧទាហរណ៍ក្នុងខ្ទង់ទី៣បង្ហាញគុណនាមកម្រិតផ្ដាច់ ។ គេប្រើពាក្យ“ ជាងគដាច់គ ”។</p>
-            <p class="box text-center">
-                កម្រិតគុណនាមមាន កម្រិតស្មើ កម្រិតមិនស្មើ និងកម្រិតផ្តាច់ ។
-            </p>
+          <p>
+            - ឧទាហរណ៍ក្នុងខ្ទង់ទី១បង្ហាញគុណនាមកម្រិតស្មើ ។ គេប្រើពាក្យ “
+            ដូចប្រហែល ស្មើ ” ។
+          </p>
+          <p>
+            - ឧទាហរណ៍ក្នុងខ្ទង់ទី២បង្ហាញគុណនាមកម្រិតមិនស្មើ ។ គេប្រើពាក្យ“
+            ជាងលើស ” ។
+          </p>
+          <p>
+            - ឧទាហរណ៍ក្នុងខ្ទង់ទី៣បង្ហាញគុណនាមកម្រិតផ្ដាច់ ។ គេប្រើពាក្យ“
+            ជាងគដាច់គ ”។
+          </p>
+          <p class="box text-center">
+            កម្រិតគុណនាមមាន កម្រិតស្មើ កម្រិតមិនស្មើ និងកម្រិតផ្តាច់ ។
+          </p>
         </div>
         <div class="page-number">៩៩</div>
       </div>
