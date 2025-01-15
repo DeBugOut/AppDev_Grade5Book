@@ -25,4 +25,15 @@ To view the book as intended, follow these steps:
 
 ---
 
+## The Following File Was Created By:
+
+### Pages Done By: 
+    Leo: 1-20 & 128-132
+    Seth: 21-40 & 121 - 127 
+    Sovann: 41-60 & 133 - 138
+    Vinna: 61-80 & 139 - 144
+    Fac: 81-100 & 145 - 150
+    Vineed :101-120 & 151 - 156
+---
+
 Enjoy your reading experience! 🎉
